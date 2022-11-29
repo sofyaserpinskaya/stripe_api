@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Order(models.Model):
-    ...
+    pass
 
 
 class Item(models.Model):
@@ -13,7 +13,6 @@ class Item(models.Model):
         Order,
         related_name='items',
         blank=True,
-        null=True,
     )
 
     class Meta():
