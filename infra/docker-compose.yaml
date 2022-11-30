@@ -1,14 +1,12 @@
-version: '3.8'
+version: '3.3'
 
 services:
-
   db:
     image: postgres:13.0-alpine
     volumes:
       - /var/lib/postgresql/data/
     env_file:
       - ./.env
-
   web:
     image: sofyaserpinskaya/stripe:latest
     restart: always
