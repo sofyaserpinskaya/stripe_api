@@ -10,7 +10,7 @@ services:
       - ./.env
 
   web:
-    image: sofyaserpinskaya/foodgram:latest
+    image: sofyaserpinskaya/stripe:latest
     restart: always
     volumes:
       - static_value:/app/static/
