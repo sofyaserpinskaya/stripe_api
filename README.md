@@ -61,8 +61,5 @@ docker-compose exec web python manage.py createsuperuser
 
 ```bash
 username: admin
-```
-
-```bash
 password: admin
 ```
