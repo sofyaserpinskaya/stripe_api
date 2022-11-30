@@ -10,7 +10,9 @@ services:
       - ./.env
 
   web:
-    build: .
+    build:
+      context: app
+      dockerfile: Dockerfile
     restart: always
     volumes:
       - static_value:/app/static/
