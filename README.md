@@ -3,13 +3,13 @@
 
 ## Методы API
 
-- GET /buy/{id} - получение Stripe Session Id для оплаты выбранного Item. 
+- GET [/buy/{id}](http://84.252.143.211/buy/1/) - получение Stripe Session Id для оплаты выбранного Item. 
 
-- GET /buy_order/{id} - получение Stripe Session Id для оплаты выбранного Order (несколько Item). 
+- GET [/buy_order/{id}](http://84.252.143.211/buy_order/1/) - получение Stripe Session Id для оплаты выбранного Order (несколько Item). 
 
-- GET /item/{id} - HTML страница с информацией о выбранном Item и кнопка Buy (запрос на /buy/{id})
+- GET [/item/{id}](http://84.252.143.211/item/1/) - HTML страница с информацией о выбранном Item и кнопка Buy (запрос на /buy/{id})
 
-- GET /order/{id} - HTML страница с информацией о выбранном Order и кнопка Buy (запрос на /buy_order/{id}).
+- GET [/order/{id}](http://84.252.143.211/order/1/) - HTML страница с информацией о выбранном Order и кнопка Buy (запрос на /buy_order/{id}).
 
 ### Автор
 
