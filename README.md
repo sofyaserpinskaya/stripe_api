@@ -59,5 +59,10 @@ docker-compose exec web python manage.py createsuperuser
 
 Админка: http://84.252.143.211/admin/
 
-admin username: admin
-admin password: admin
+```bash
+username: admin
+```
+
+```bash
+password: admin
+```
