@@ -6,6 +6,7 @@ from django.shortcuts import get_object_or_404, render
 from item.models import Item, Order
 from stripe_api.settings import STRIPE_SECRET_KEY, STRIPE_PUBLIC_KEY
 
+
 stripe.api_key = STRIPE_SECRET_KEY
 
 
@@ -44,8 +45,7 @@ def item_detail(request, item_id):
 
 
 def buy(_, id):
-    items = [get_object_or_404(Item, id=id)]
-    return get_session_id(items)
+    return get_session_id([get_object_or_404(Item, id=id)])
 
 
 def order_detail(request, order_id):
@@ -61,8 +61,7 @@ def order_detail(request, order_id):
 
 
 def buy_order(_, id):
-    items = Item.objects.filter(orders=id)
-    return get_session_id(items)
+    return get_session_id(Item.objects.filter(orders=id))
 
 
 def cancel(request):
