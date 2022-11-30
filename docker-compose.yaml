@@ -10,9 +10,7 @@ services:
       - ./.env
 
   web:
-    build:
-      context: app
-      dockerfile: Dockerfile
+    image: sofyaserpinskaya/foodgram:latest
     restart: always
     volumes:
       - static_value:/app/static/
